@@ -1,5 +1,0 @@
-print("Greeting from Ahad!")
-city = input("What is the name of the city you grew up? ")
-pet = input("What is the name of your pet? ")
-band_name = city + " " + pet
-print(band_name)
