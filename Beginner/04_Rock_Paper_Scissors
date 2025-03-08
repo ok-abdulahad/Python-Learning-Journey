@@ -1,0 +1,53 @@
+import random
+
+given = int((input("What do you choose? Type 0 for Rock, 1 for Paper ot 2 for Scissors ")))
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+actions = [rock,paper,scissors]
+rand_num = random.randint(0,2)
+
+print(actions[given])
+print("Computer chose: ", actions[rand_num])
+if given == rand_num:
+    print("It's a draw")
+elif given == 0:
+    if rand_num == 1:
+        print("You Lose")
+    elif rand_num == 2:
+        print("You Win")
+elif given == 1:
+    if rand_num == 0:
+        print("You win!")
+    elif rand_num == 2:
+        print("You lose!")
+elif given == 2:
+    if rand_num == 1:
+        print("You win!")
+    elif rand_num == 0:
+        print("You lose!")
